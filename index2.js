@@ -7,10 +7,10 @@
 // // 2.  A flowchart Flow chart là một dạng biểu đồ có tính hữu dụng lớn cho các lập trình viên, đặc biệt trong các hệ thống sử dụng phương pháp lập trình hướng chức năng (OOF)
 
 // name -- “Huy be"-------- print(“Hand some")
-// 		|				  true
+// 		|		     true
 // 		|
 // 		|----------- name -- “Huy big"--------------- even_more_handsome - True
-// 				  false						 |		   true
+// 		    false						  true
 // 											 |
 // 					  						 |false
 // 					  						 |
