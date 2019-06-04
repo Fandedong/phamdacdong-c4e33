@@ -59,22 +59,22 @@
 // let b = prompt(" nhap color ");
 // square(a, b);
 
-// 5
-clear();
-let star = (a) => {
-rt(18);
-fd(a);
-rt(144);
-fd(a);
-rt(144);
-fd(a);
-rt(144);
-fd(a);
-rt(144);
-fd(a);
-};
-let a = Number(prompt("Input a "));
-star(a);
+// // 5
+// clear();
+// let star = (a) => {
+// rt(18);
+// fd(a);
+// rt(144);
+// fd(a);
+// rt(144);
+// fd(a);
+// rt(144);
+// fd(a);
+// rt(144);
+// fd(a);
+// };
+// let a = Number(prompt("Input a "));
+// star(a);
 
 
 
