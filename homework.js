@@ -1,122 +1,100 @@
-// What is nested list?
-// 1 array ben trong 1 array khac
-// Can a list store both integers and strings in it?
-// Yes
+
+//-Why should we use functions at all? Để sử dụng code nhiều lần
+
+//-How to define/declare a function?- Let namefuntion = (name1, name2, name3) {};
+
+//-How to call/use a function?- namefunction(value/function)
+
+//-What is return, why and how do we use it?...
+
+//Do we have to use return in every function? ko nên
+
+//What are function arguments/parameters, why and how we use it? 
+//Function parameters are listed inside the parentheses () in the function definition.
+//Function arguments are the values received by the function when it is invoked.
+//Inside the function, the arguments (the parameters) behave as local variables.
+
+//How to use function from a different file other than our currently working file? 
+//The function could be called as if it was in the same JS File as long as the file containing the definition of the function has been loaded before the first use of the function. (chắc vậy ...)
 // ex1
-inventory = {
-    'gold' : 500,
-    'pouch' : ['flint', 'twine', 'gemstone'],
-    'backpack' : ['xylophone', 'dagger', 'bedroll', 'bread loaf']
+// let words = () =>{
+// 	for ( i = 0; i <= 3; i++ ) {
+// 		console.log("hello world");
+// 	}
+// }
+// 	words();
+
+
+
+
+
+
+
+// //ex2
+// let tong = (x, y) =>{
+// 	let resutl = x + y;
+// 	console.log(resutl);
+// }
+// let x = Number(prompt(" nhap x"));
+// let y = Number(prompt("nhap y"));
+// tong(x, y);
+
+
+
+
+
+// // ex3
+// clear();
+// let square = (a, b) => {
+// color(b);
+// fd(a);
+// rt(90);
+// fd(a);
+// rt(90);
+// fd(a);
+// rt(90);
+// fd(a);
+// };
+// let a = Number(prompt(" nhap a "));
+// let b = prompt(" nhap color ");
+// square(a, b);
+
+// 5
+clear();
+let star = (a) => {
+rt(18);
+fd(a);
+rt(144);
+fd(a);
+rt(144);
+fd(a);
+rt(144);
+fd(a);
+rt(144);
+fd(a);
 };
-inventory.pocket = "test";
-console.log(inventory);
-
-
-
-ArrayPocket = ["seashell", "strange berry", "lint"];
-inventory.pocket = ArrayPocket;
-console.log(inventory);
-
-
-inventory.backpack.splice(1, 1);
-console.log(inventory);
-
-
-
-inventory.gold = 50;
-console.log(inventory);
-
-
-//ex2
-prices = {};
-console.log(prices);
-
-prices.banana = 4;
-prices.apple = 2;
-prices.orange = 1.5;
-prices.pear = 3;
-console.log(prices);
-
-stock = {};
-console.log(stock);
-
-stock.banana = 6;
-stock.apple = 0;
-stock.orange = 32;
-stock.pear = 15;
-console.log(stock);
+let a = Number(prompt("Input a "));
+star(a);
 
 
 
 
 
-let moneyTable = [{name: "banana", prices: 4, stock: 6},
-		{name: "apple", prices: 2, stock: 0},
-		{name: "orange", prices: 1.5, stock: 32},
-		{name: "lpear", prices: 3, stock: 15}
-		];
-let t = 0;
 
-table.forEach((money, index) => {
-	let totalmoney = money.prices*money.stock;
-	t += totalmoney; 
-})
-console.log(`Tong tien ban hoa qua la: ${t}`);
+// ex8
 
 
-//Ex 3
-
-let shop = ["T-Shirt", "Sweater"];
-let input = prompt("Welcome to our shop, what do you want (C, R, U, D)?");
-if (input.toLowerCase() === "r"){
-    console.log(`Our items: ${shop}`);
-}
-else if(input.toLowerCase() === "c"){
-	let newitem = prompt("Nhap item moi: ");
-	shop.push(newitem);
-	console.log(`Our items: ${shop}`);
-}
-else if (input.toLowerCase() === "u"){
-	let update = prompt("Update position?");
-	let newitem = prompt("New item?");
-	shop.splice(update-1, 1, newitem);
-	console.log(`Our items: ${shop}`);
-}
-else if (input.toLowerCase() === "d"){
-	let deleteItem = prompt("Delete position? ");
-	shop.splice(delete-1, 1);
-	console.log(`Our items: ${shop}`);
-}
-else {
-	console.log("Pls input C, R, U, D");
-}
-
-
-
-	
-//Ex 4
-
-let SizeCuu = [5, 7, 300, 90, 24, 50, 75];
-console.log(`Hello these are my ship sizes : ${SizeCuu} `);
-
-
-//4.2
-
-let a = 0;
-
-for (let i = 0; i < SizeCuu.length; i++) {
-    if (a <= SizeCuu[i]) {
-        a = SizeCuu[i];
-    }
-}
-console.log(`Now my biggest sheep has size ${a} let's shear it`);
-
-//4.3
-SizeCuu[SizeCuu.indexOf(a)] = 8;
-
-//4.4 
-for (let i = 0; i < SizeCuu.length; i++){
-	SizeCuu[i] = SizeCuu[i] + 50;
-}
-console.log(`One month has passed,here are my ship sizes : ${SizeCuu} `);
-
+	let list = (a) => {
+		for ( let i = 0; i < a.length, i++ ) {
+			if (a[i] % 2  === 0){
+				conslole.log(a);
+			}
+			else if (a[i]%2 === 1){
+				a.splice(i, 1);
+				console.log(a);
+			}
+		}
+		return a;
+	}
+	let num = [1, 4, 5, -1, 10];
+	list(num);
